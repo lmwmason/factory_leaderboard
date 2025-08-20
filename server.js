@@ -32,7 +32,6 @@ async function createTable() {
         console.error("Error creating table:", err);
     }
 }
-createTable();
 
 app.post('/update', async (req, res) => {
     const { id, score } = req.body;
